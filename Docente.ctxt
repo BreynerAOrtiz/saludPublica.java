@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Docente
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Docente\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Docente()
+comment2.params=nivelEducativo\ institucion
+comment2.target=Docente(java.lang.String,\ java.lang.String)
+numComments=3
