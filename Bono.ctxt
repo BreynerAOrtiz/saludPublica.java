@@ -1,14 +1,13 @@
 #BlueJ class context
+#Tue Oct 27 17:42:51 COT 2026
 comment0.target=Bono
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Bono\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
+comment0.text=\r\n Write a description of class Bono here.\r\n \r\n @author (your name) \r\n @version (a version number or a date)\r\n
 comment1.target=Bono()
 comment2.params=monto
 comment2.target=Bono(double)
-comment3.params=
-comment3.target=double\ getMonto()
-comment3.text=GET\ Method\ Propertie\ monto
+comment3.target=double getMonto()
+comment3.text=GET Method Propertie monto
 comment4.params=monto
-comment4.target=void\ setMonto(double)
-comment4.text=SET\ Method\ Propertie\ monto
+comment4.target=void setMonto(double)
+comment4.text=SET Method Propertie monto
 numComments=5

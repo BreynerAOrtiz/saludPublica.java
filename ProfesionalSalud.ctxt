@@ -1,4 +1,21 @@
 #BlueJ class context
+#Tue Oct 27 20:51:51 COT 2026
 comment0.target=ProfesionalSalud
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ ProfesionalSalud\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-numComments=1
+comment0.text=\r\n Write a description of class ProfesionalSalud here.\r\n \r\n @author (your name) \r\n @version (a version number or a date)\r\n
+comment1.target=ProfesionalSalud()
+comment10.params=bioseguridad
+comment10.target=void setBioseguridad(Bioseguridad)
+comment11.target=java.lang.String toString()
+comment2.params=tipoDocumento numeroDocumento nombre apellidos direccion telefono edad cabezaHogar estadoCivil institucion especialidad
+comment2.target=ProfesionalSalud(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, boolean, java.lang.String, java.lang.String, java.lang.String)
+comment3.target=java.lang.String getInstitucion()
+comment4.params=institucion
+comment4.target=void setInstitucion(java.lang.String)
+comment5.target=java.lang.String getEspecialidad()
+comment6.params=especialidad
+comment6.target=void setEspecialidad(java.lang.String)
+comment7.target=Medicina getMedicina()
+comment8.params=medicina
+comment8.target=void setMedicina(Medicina)
+comment9.target=Bioseguridad getBioseguridad()
+numComments=12

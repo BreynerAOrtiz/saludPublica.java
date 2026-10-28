@@ -1,16 +1,14 @@
 #BlueJ class context
+#Tue Oct 27 20:46:26 COT 2026
 comment0.target=Medicina
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Medicina\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
+comment0.text=\r\n Write a description of class Medicina here.\r\n \r\n @author (your name) \r\n @version (a version number or a date)\r\n
 comment1.target=Medicina()
 comment2.params=valor
 comment2.target=Medicina(int)
-comment3.params=
-comment3.target=int\ getValor()
-comment3.text=GET\ Method\ Propertie\ valor
+comment3.target=int getValor()
+comment3.text=GET Method Propertie valor
 comment4.params=valor
-comment4.target=void\ setValor(int)
-comment4.text=SET\ Method\ Propertie\ valor
-comment5.params=
-comment5.target=java.lang.String\ toString()
+comment4.target=void setValor(int)
+comment4.text=SET Method Propertie valor
+comment5.target=java.lang.String toString()
 numComments=6

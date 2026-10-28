@@ -35,7 +35,7 @@ public class CanastaFamiliar
 @Override
 
 public String toString(){
-    return "CanastaFamiliar(" + "valorCanastaFamiliar=" + valor;
+    return "CanastaFamiliar(" + "valorCanastaFamiliar=" + valor + ")";
 }
 
 

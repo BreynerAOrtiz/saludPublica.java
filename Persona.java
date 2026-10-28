@@ -9,11 +9,11 @@ public class Persona
 {
     
     protected String tipoDocumento;
-    protected int numeroDocumento;
+    protected String numeroDocumento;
     protected String nombre;
     protected String apellidos;
     protected String direccion;
-    protected int telefono;
+    protected String telefono;
     protected int edad;
     protected boolean cabezaHogar;
     protected String estadoCivil;
@@ -23,7 +23,7 @@ public class Persona
         
     }
     
-    public Persona(String tipoDocumento, int numeroDocumento, String nombre,String apellidos,String direccion, int telefono,int edad,boolean cabezaHogar, String estadoCivil){
+    public Persona(String tipoDocumento, String numeroDocumento, String nombre,String apellidos,String direccion, String telefono,int edad,boolean cabezaHogar, String estadoCivil){
         this.tipoDocumento = tipoDocumento;
         this.numeroDocumento =numeroDocumento;
         this.nombre = nombre;
@@ -50,16 +50,7 @@ public class Persona
         this.tipoDocumento = tipoDocumento;
     }//end method setTipoDocumento
 
-    /**GET Method Propertie numeroDocumento*/
-    public int getNumeroDocumento(){
-        return this.numeroDocumento;
-    }//end method getNumeroDocumento
-
-    /**SET Method Propertie numeroDocumento*/
-    public void setNumeroDocumento(int numeroDocumento){
-        this.numeroDocumento = numeroDocumento;
-    }//end method setNumeroDocumento
-
+    
     /**GET Method Propertie nombre*/
     public String getNombre(){
         return this.nombre;
@@ -90,16 +81,16 @@ public class Persona
         this.direccion = direccion;
     }//end method setDireccion
 
-    /**GET Method Propertie telefono*/
-    public int getTelefono(){
-        return this.telefono;
-    }//end method getTelefono
-
-    /**SET Method Propertie telefono*/
-    public void setTelefono(int telefono){
+    public String getTelefono(){ 
+        return this.telefono; 
+    }
+    
+    
+    public void setTelefono(String telefono){ 
         this.telefono = telefono;
-    }//end method setTelefono
-
+    }
+    
+    
     /**GET Method Propertie edad*/
     public int getEdad(){
         return this.edad;
@@ -144,7 +135,7 @@ public class Persona
 @Override
 
 public String toString(){
-    return "Persona(" + "TipoDocumento=" + tipoDocumento + "numeroDocumento=" + numeroDocumento + "Nombre" + nombre + "Apellidos" + apellidos + "Direccion" + direccion + "Telefono" + telefono
+    return "TipoDocumento=" + tipoDocumento + "numeroDocumento=" + numeroDocumento + "Nombre" + nombre + "Apellidos" + apellidos + "Direccion" + direccion + "Telefono" + telefono
     + "Edad" + edad + "CabezaHogar" + cabezaHogar + "EstadoCivil" + estadoCivil;
 }
 

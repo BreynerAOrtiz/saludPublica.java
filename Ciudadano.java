@@ -11,19 +11,24 @@ public class Ciudadano extends Persona
 {
     private String sisben;
     private int estrato;
+    private CanastaFamiliar canastaFamiliar;
+    private Medicina medicina;
     
-    private ArrayList <CanastaFamiliar> canastafamiliar = new ArrayList<>();
-    private ArrayList <Medicina> medicina = new ArrayList<>();
-    
-    public Ciudadano(){
-        
+    public Ciudadano() {
+        super();
+        this.bono = new Bono(160000);
+        this.medicina = new Medicina(0);
+        this.canastaFamiliar = new CanastaFamiliar(0);
     }
     
-    public Ciudadano(String sisben, int estrato){
-        this.sisben=sisben;
-        this.estrato=estrato;
-    }
-    
+    public Ciudadano(String tipoDocumento, String numeroDocumento, String nombre, String apellidos, String direccion, String telefono, int edad, boolean cabezaHogar, String estadoCivil, String sisben, int estrato) {
+        super(tipoDocumento, numeroDocumento, nombre, apellidos, direccion, telefono, edad, cabezaHogar, estadoCivil);
+        this.sisben = sisben;
+        this.estrato = estrato;
+        this.bono = new Bono(160000);
+        this.medicina = new Medicina(0);
+        this.canastaFamiliar = new CanastaFamiliar(0);
+    }    
 
 //Start GetterSetterExtension Source Code
 
@@ -47,27 +52,28 @@ public class Ciudadano extends Persona
         this.estrato = estrato;
     }//end method setEstrato
 
-    /**GET Method Propertie canastafamiliar*/
-    public java.util.ArrayList<CanastaFamiliar> getCanastafamiliar(){
-        return this.canastafamiliar;
-    }//end method getCanastafamiliar
-
-    /**SET Method Propertie canastafamiliar*/
-    public void setCanastafamiliar(java.util.ArrayList<CanastaFamiliar> canastafamiliar){
-        this.canastafamiliar = canastafamiliar;
-    }//end method setCanastafamiliar
-
-    /**GET Method Propertie medicina*/
-    public java.util.ArrayList<Medicina> getMedicina(){
-        return this.medicina;
-    }//end method getMedicina
-
-    /**SET Method Propertie medicina*/
-    public void setMedicina(java.util.ArrayList<Medicina> medicina){
-        this.medicina = medicina;
-    }//end method setMedicina
+    public Medicina getMedicina(){
+         return this.medicina; 
+        }
+        
+    public void setMedicina(Medicina medicina){
+        this.medicina = medicina; 
+    }
+ 
+    public CanastaFamiliar getCanastaFamiliar(){ 
+        return this.canastaFamiliar;
+    }
+    
+    public void setCanastaFamiliar(CanastaFamiliar canastaFamiliar){ 
+        this.canastaFamiliar = canastaFamiliar; 
+    }
 
 //End GetterSetterExtension Source Code
-
+ @Override
+    public String toString(){
+        return "Ciudadano -> " + super.toString()
+             + ", Medicina: " + medicina.getValor()
+             + ", Canasta familiar: " + canastaFamiliar.getValor();
+    }
 
 }//End class
